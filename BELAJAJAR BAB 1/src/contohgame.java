@@ -4,12 +4,12 @@ public class contohgame{
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        System.out.print("---selamat datang di dunia fantasy ---");
+        System.out.println("---selamat datang di dunia fantasy ---");
 
-        System.out.println("Masukan Nama Kamu ");
+        System.out.print("Masukan Nama Kamu : ");
         String name = s.nextLine();
 
-        System.out.println("Masukan Usia Kamu");
+        System.out.print("Masukan Usia Kamu : ");
         int age = s.nextInt();
 
         if ( age < 17) {
@@ -29,7 +29,7 @@ public class contohgame{
                 System.out.println("2. mage");
                 System.out.println("3. archer");
 
-                System.out.println("enter the number your choice");
+                System.out.print("enter the number your choice : ");
                 int classchoice = s.nextInt();
                 s.nextLine();
                 

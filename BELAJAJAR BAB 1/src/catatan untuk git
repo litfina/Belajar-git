@@ -1,1 +1,72 @@
-a
+untuk buat git di suatu folder kita harus ke folder itu dengan cara cd "/"/ (ini di dalam folder atau lokasi yang mau di buat )
+untuk confignya pertama di git tiap folder bisa beda mau local apa global 
+    untuk global git config --global "nama/email"
+    untuk local git config --local "nama/email"
+
+untuk cara mengecek siaap aja yang udah buat git bisa pake 
+git config --global --list 
+atau 
+git config --local --list
+
+
+git add . gunanya untuk kirjm semua file bersamaan gak satu satu
+
+git commit -m "bla bla" di gunanya untuk pemberitahuan aja siapa yang buat gitu nanti ada di github //-m untuk master kekgnya 
+
+git push -u origin master gunanya untuk mengepush file yang di dalam git di situ master itu brach yang di ujung nama ada main atau master gitu 
+kalo sudah kita masukin kita untuk kedua kalinya id folder sma gak usab pake master lagi tinggla git push aja 
+
+git pull di gunakan untuk update data dari github ke local
+===================================================================
+                GIT CHEAT SHEET - KODE LENGKAP BASIK
+===================================================================
+
+1. KONFIGURASI AWAL (Cukup 1x di laptop/PC baru)
+-------------------------------------------------------------------
+git config --global user.name "Nama Kamu"
+git config --global user.email "emailkamu@example.com"
+git config --list                           # Cek semua konfigurasi yang aktif
+
+
+2. MEMULAI PROYEK BARU
+-------------------------------------------------------------------
+git init                                    # Buat repo Git baru di folder lokal
+git clone <URL_REPOSITORY_GITHUB>           # Download proyek dari GitHub
+
+
+3. ALUR KERJA HARIAN (Paling Sering Dipakai)
+-------------------------------------------------------------------
+git status                                  # Cek status file (berubah/baru)
+git add <nama_file>                         # Masukkan file tertentu ke antrean
+git add .                                   # Masukkan SEMUA file ke antrean
+git commit -m "Pesan perubahan kode"        # Simpan antrean ke riwayat permanen
+git log                                     # Lihat riwayat commit lengkap
+git log --oneline                           # Lihat riwayat commit versi singkat
+
+
+4. MEMBATALKAN PERUBAHAN (UNDO)
+-------------------------------------------------------------------
+git restore <nama_file>                     # Batalkan perubahan (jika belum di-add)
+git restore --staged <nama_file>            # Keluarkan file dari antrean (staging)
+git reset --soft HEAD~1                     # Batalkan commit terakhir (kode aman)
+
+
+5. PERCABANGAN (BRANCHING)
+-------------------------------------------------------------------
+git branch                                  # Lihat daftar branch yang ada
+git branch <nama_branch_baru>               # Buat branch baru
+git switch <nama_branch>                    # Pindah ke branch lain
+git checkout -b <nama_branch_baru>          # Buat branch baru & langsung pindah
+git merge <nama_branch_yang_mau_digabung>   # Gabungkan branch ke branch aktif
+git branch -d <nama_branch>                 # Hapus branch
+
+
+6. MENGHUBUNGKAN KE GITHUB (REMOTE)
+-------------------------------------------------------------------
+git remote add origin <URL_GITHUB>          # Hubungkan folder lokal ke GitHub
+git push -u origin main                     # Kirim pertama kali & set branch utama
+git push                                    # Kirim perubahan selanjutnya
+git pull                                    # Ambil & langsung gabungkan kode dari GitHub
+git fetch                                   # Cek pembaruan di GitHub (tanpa menggabungkan)
+
+===================================================================

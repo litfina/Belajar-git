@@ -1,0 +1,16 @@
+mulai java itu di mulai menggunakan 
+public class MainActivity extends AppCompatActivity {
+        public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"; {
+            code nya
+    }
+}
+
+for ech kayak for biasa tapi lebih simple dan dia akan menampilkan smeua data yang ada di array
+
+untuk while tuh codenya beda ama c 
+code while di java 
+while (kodisi < kondisi)
+System.out.println("bla bla :" +kondisi);
+kodisi++;
+
+//penggunaaan ln di ahir print sebgai new line

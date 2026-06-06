@@ -14,9 +14,3 @@ System.out.println("bla bla :" +kondisi);
 kodisi++;
 
 //penggunaaan ln di ahir print sebgai new line
-
-Scanner s = new Scanner(System.in); 
- nah s itu untuk new scanf atau mengambil input dari keyboard
- untuk java 
- untuk scanf nya di string menggunakna String name = s.nextLine(); ini 
- sedangkan di integer menggunakna int age = s.nextint(); 
